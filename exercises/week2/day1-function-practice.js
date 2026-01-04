@@ -175,29 +175,67 @@ console.log("\n=== Practice Exercises ===");
 // TODO: Create a function that calculates the total price with tax
 function calculateTotalPrice(price, taxPercent = 12) {
   // Your code here
+  // const tax = price * (taxPercent / 100);
+  // return price + tax;
+
+  return price + price * (taxPercent / 100);
 }
+console.log(calculateTotalPrice(1000));
 
 // TODO: Create a function that checks if a person is a teenager (13-19)
 function isTeenager(age) {
   // Your code here
+  if (age >= 13 && age <= 19) {
+    return true;
+  }
+  return false;
 }
+console.log(isTeenager(15));
 
 // TODO: Create a function that converts hours and minutes to total minutes
 function toMinutes(hours, minutes) {
   // Your code here
+  return hours * 60 + minutes;
 }
+console.log(toMinutes(2, 30));
 
 // TODO: Create a function that returns the larger of two numbers
 function max(a, b) {
   // Your code here
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
 }
+console.log(max(5, 8));
 
 // TODO: Create a function for a simple tip calculator
 function calculateTip(billAmount, serviceQuality) {
   // serviceQuality: "poor" (5%), "good" (10%), "excellent" (15%)
   // Return object with: bill, tip, total
   // Your code here
+  let tipPercent;
+  if (serviceQuality === "poor") {
+    tipPercent = 0.05;
+  } else if (serviceQuality === "good") {
+    tipPercent = 0.1;
+  } else if (serviceQuality === "excellent") {
+    tipPercent = 0.15;
+  } else {
+    tipPercent = 0; // no tip for unknown quality
+  }
+
+  const tip = billAmount * tipPercent;
+  const total = billAmount + tip;
+
+  return {
+    bill: billAmount,
+    tip: tip,
+    total: total,
+  };
 }
+console.log(calculateTip(500, "excellent"));
 
 // Test your functions
 // console.log("Total price:", calculateTotalPrice(1000));

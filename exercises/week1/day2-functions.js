@@ -51,33 +51,33 @@ console.log("\n=== Real-world Function Practice ===");
 // TODO: Write a function that calculates the area of a rectangle
 // Formula: area = length * width
 
-function calculateRectangleArea(length, width) {
-  return length * width;
-}
+// function calculateRectangleArea(length, width) {
+//     return length * width;
+// }
 
 // TODO: Test your function
-console.log("Rectangle area (5x3):", calculateRectangleArea(5, 3));
-console.log("Rectangle area (10x2):", calculateRectangleArea(10, 2));
+// console.log("Rectangle area (5x3):", calculateRectangleArea(5, 3));
+// console.log("Rectangle area (10x2):", calculateRectangleArea(10, 2));
 
 // BONUS Tasks:
 // TODO: Write a function that calculates the area of a circle
 // Formula: area = π * radius²
 // Hint: Use Math.PI for π and Math.pow(radius, 2) for radius²
 
-function calculateCircleArea(radius) {
-  return Math.PI * Math.pow(radius, 2);
-}
+// function calculateCircleArea(radius) {
+//     return Math.PI * Math.pow(radius, 2);
+// }
 
 // TODO: Write a function that checks if a number is even
 // Hint: Use the modulo operator (%) - if num % 2 === 0, it's even
 
-function isEven(number) {
-  return number % 2 === 0;
-}
+// function isEven(number) {
+//     return number % 2 === 0;
+// }
 
 // TODO: Test your bonus functions
-console.log("Circle area (radius 5):", calculateCircleArea(5));
-console.log("Is 8 even?", isEven(8));
-console.log("Is 7 even?", isEven(7));
+// console.log("Circle area (radius 5):", calculateCircleArea(5));
+// console.log("Is 8 even?", isEven(8));
+// console.log("Is 7 even?", isEven(7));
 
 // Run this file with: node day2-functions.js
